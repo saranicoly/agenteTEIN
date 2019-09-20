@@ -107,6 +107,10 @@ a:active{
   background-color: #fff;
 }
 
+.new_notif_form {
+
+}
+
 /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{
   width: 100%;
@@ -168,4 +172,11 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+select.basic{
+  width:100%;
+  height: auto;
+  background-color: gray;
+  border-radius: 10px;
+  color: white;
 }

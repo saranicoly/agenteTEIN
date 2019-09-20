@@ -27,6 +27,14 @@
       });
     </script>
 
+<!-- map style -->
+    <style>
+      #map {
+        height: 600px; 
+        width: 100%; 
+       }
+    </style>
+
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
 
@@ -57,6 +65,19 @@
                     
     <!-- navbar end --> 
     
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+function initMap() {
+  var maceio = {lat: -9.66625, lng: -35.7351};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 14, center: maceio});
+  var marker = new google.maps.Marker({position: maceio, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9SgF2m_OfGRK4Qp8MdVt4Ueg3FrcGHBI&callback=initMap">
+    </script>
 
 
 <!-- materialize scripts -->
