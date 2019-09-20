@@ -1,23 +1,44 @@
-html,
+html {
+  min-height: 100%;
+}
 body {
-  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(3, 126, 142);
 }
 
-body {
-  display: -ms-flexbox;
+.responsive {
+  min-width: 100%;
+  max-width: 200%;
+  height: auto;
+}
+
+.barra {
+  margin-top: 30%;
   display: flex;
-  -ms-flex-align: center;
+  padding: 0%;
+  flex-direction: row;
+  background-color: #0098ac;
+  min-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.div_login{
+  display: flex;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: rgb(3, 126, 142);
+  flex-direction: row;
+  align-content: center;
 }
 
 .form-signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
-  margin: auto;
+
 }
 .form-signin .checkbox {
   font-weight: 400;
@@ -33,12 +54,10 @@ body {
   z-index: 2;
 }
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -49,4 +68,12 @@ a:link, a:visited{
 a:active{
   text.decoration: none;
   color: white;
+}
+.bottom-box {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 0; /* this is the bottom end of the content, not the bottom end of the viewport*/
+  width: 200px;
+  height: 20px;
 }
