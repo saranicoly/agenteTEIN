@@ -112,24 +112,42 @@ a:active{
 }
 
 .btn_validate {
-  width: 49.5%;
+  margin-left: 2%;
+  min-width: 20%;
+  max-width: 48%;
+  width: 48%;
   height: 40px;
   cursor: pointer;
   font-size: 112%;
   background: rgb(191, 73, 80);
   color: #fff;
   border: 0px;
+  flex: 1;
 }
 
 .btn_validate2 {
-  width: 49.5%;
+  min-width: 20%;
+  max-width: 48%;
+  width: 48%;
   height: 40px;
   cursor: pointer;
   font-size: 112%;
   background: rgb(82, 223, 218);
   color: #fff;
   border: 0px;
+  flex: 1;
 }
+
+.div_response{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  align-items: center;
+}
+
 
 .container2 {
   width: 100%;
@@ -137,7 +155,6 @@ a:active{
   background-color: #f2f2f2;
   padding: 10px;
 }
-
 
 /* new notification */
 
