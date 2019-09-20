@@ -6,6 +6,15 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
 
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+       $(document).ready(function() {
+          $('select').material_select();
+      });
+    </script>
+
 <!-- materialize fonts -->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
@@ -63,8 +72,19 @@
 
     <div class="container">
         <select>
-          <option value="grupo1">Grupo 1</option>
-          <option value="grupo2">Grupo 2</option>
+          <option value="" disabled selected>Grupo</option>
+          <option value="dengue">Dengue</option>
+          <option value="esgoto">Esgoto</option>
+          <option value="parasitas">Parasitas</option>
+          <option value="lixo">Lixo</option>
+          <option value="floresta">Floresta</option>
+          <option value="animais">Animais</option>
+          <option value="doente">Doente Mental</option>
+          <option value="hipertensos">Hipertensos</option>
+          <option value="diabeticos">Diabéticos</option>
+          <option value="fumantes">Fumantes</option>
+          <option value="drogas">Drogas</option>
+          <option value="alcoolismo">Alcoolismo</option>
         </select>
     </div>
 
