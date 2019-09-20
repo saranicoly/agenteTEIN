@@ -191,3 +191,10 @@ input[type=text], select, textarea{
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+/* visita */
+
+.text_visita{
+  text-align: left;
+  font-size: 20;
+}
