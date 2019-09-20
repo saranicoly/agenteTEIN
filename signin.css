@@ -8,6 +8,10 @@ body {
   background-color: rgb(3, 126, 142);
 }
 
+.notif {
+  background-color: rgb(232, 232, 232);
+}
+
 .responsive {
   min-width: 100%;
   max-width: 200%;
