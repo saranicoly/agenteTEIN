@@ -61,21 +61,46 @@
     <img src="images/progresso.png">
     <div class="text_visita" style="text-align: left;">Etapa 1 de 4</div>
 
-    <br>
+    <br><br>
 
-    <!-- input field 
-    <div class="cadastro1">
-      <form>
-        <textarea id="subject" name="subject" placeholder="CEP"></textarea>
-      
-    </div>
-
-    <br> 
-    <div class="row>">
-      <button class="nn_btn" type="submit">Notificar</button>
-    </div>
-    </form>
-    -->
+    <!-- input field -->
+    <form action="/action_page.php">
+      <fieldset>
+        <div class="cadastro1_tamanho">
+          <input type="text" name="cep" placeholder="CEP" style="font-size: 23px">
+        </div>
+        <br>
+        <div class="cadastro1_tamanho">
+          <input type="text" name="numero" placeholder="Número" style="font-size: 23px">
+        </div>
+        <br>
+        <div class="cadastro1">
+          <input type="text" name="rua" placeholder="Rua" style="font-size: 23px">
+        </div>
+        <br>
+        <div class="cadastro1">
+          <input type="text" name="abastecimento" placeholder="Abastecimento d'água" style="font-size: 23px">
+        </div>
+        <br>
+        <div class="cadastro1">
+          <input type="text" name="animais" placeholder="Animais" style="font-size: 23px">
+        </div>
+        <br>
+        <div class="cadastro1">
+          <input type="text" name="esgoto" placeholder="Esgoto" style="font-size: 23px">
+        </div>
+        <br>
+        <div class="cadastro1">
+          <input type="text" name="lixo" placeholder="Lixo" style="font-size: 23px">
+        </div>
+        <br>
+        <div class="cadastro1">
+          <input type="text" name="nsus" placeholder="N° SUS Responsável" style="font-size: 23px">
+        </div>
+        <br>
+    <input type="submit" class="nn_btn" value="Próximo">
+  </fieldset>
+</form>
 
 <!-- materialize scripts -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

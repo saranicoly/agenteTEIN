@@ -208,4 +208,12 @@ input[type=text], select, textarea{
 
 .cadastro1{
   background-color: #f2f2f2;
+  font-size: 23;
+}
+
+.cadastro1_tamanho {
+  background-color: #f2f2f2;
+  font-size: 23;
+  width: 50%;
+
 }
