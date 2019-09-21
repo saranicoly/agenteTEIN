@@ -194,7 +194,18 @@ input[type=text], select, textarea{
 
 /* visita */
 
+.visita {
+  background-color: #fff;
+  align-items: stretch;
+}
+
 .text_visita{
   text-align: left;
-  font-size: 20;
+  font-size: 23;
+  color: #AEAEAE;
+  padding-left: 12px;
+}
+
+.cadastro1{
+  background-color: #f2f2f2;
 }
