@@ -58,7 +58,7 @@
     <!-- navbar end --> 
     
     <!-- progress bar -->
-    <img src="images/progresso.png">
+    <img src="images/progresso2.png">
     <div class="text_visita" style="text-align: left;">Etapa 2 de 4</div>
 
     <br><br>
@@ -66,33 +66,43 @@
     <!-- input field -->
     <form action="visita2.html">
       <fieldset>
-        <div class="div_response">
-          <div class="cadastro1_cep">
-            <input type="text" name="cep" placeholder="CEP" style="font-size: 23px">
-          </div>
-          <div class="cadastro1_numero">
-            <input type="text" name="numero" placeholder="Número" style="font-size: 23px;">
-          </div>
+        <div class="cadastro1">
+          <input type="text" id="nsus2" placeholder="N° SUS" style="font-size: 23px">
         </div>
         <div class="cadastro1">
-          <input type="text" name="rua" placeholder="Rua" style="font-size: 23px">
+          <input type="text" id="parentesco" placeholder="Parentesco" style="font-size: 23px">
         </div>
         <div class="cadastro1">
-          <input type="text" name="abastecimento" placeholder="Abastecimento d'água" style="font-size: 23px">
+          <input type="text" id="escolaridade" placeholder="Escolaridade" style="font-size: 23px">
         </div>
         <div class="cadastro1">
-          <input type="text" name="animais" placeholder="Animais" style="font-size: 23px">
+          <input type="text" id="genero" placeholder="Gênero" style="font-size: 23px">
         </div>
         <div class="cadastro1">
-          <input type="text" name="esgoto" placeholder="Esgoto" style="font-size: 23px">
+          <input type="text" id="deficiencia" placeholder="Deficiência" style="font-size: 23px">
         </div>
         <div class="cadastro1">
-          <input type="text" name="lixo" placeholder="Lixo" style="font-size: 23px">
+          <input type="text" id="crianca" placeholder="Criança fica com..." style="font-size: 23px">
         </div>
-        <div class="cadastro1">
-          <input type="text" name="nsus" placeholder="N° SUS Responsável" style="font-size: 23px">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Plano de saúde
+          </label>
         </div>
-        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Mudança
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+          <label class="form-check-label" for="defaultCheck3">
+            Óbito
+          </label>
+        </div>
+
         <!-- ajustar posicionamento do botao!!! // por algum motivo a margem da direita ficava bugada -->
         <input type="submit" class="prox_btn" value="Próximo">
       </fieldset>
