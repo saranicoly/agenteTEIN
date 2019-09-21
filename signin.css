@@ -232,3 +232,13 @@ input[type=text], select, textarea{
   border-width: 0px 20px 10px 5px;
 }
 
+.prox_btn {
+  background-color: rgb(0, 188, 212);
+  width: 90%;
+  height: 70px;
+  cursor: pointer;
+  font-size: 150%;
+  color: #fff;
+  border: 0px;
+  margin-left: 20px;
+}
