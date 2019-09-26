@@ -1,0 +1,37 @@
+Detalhes do front-end a adicionar/corrigir:
+
+index.html
+ok
+
+forget.html
+ok
+
+home.html
+-ajustar responsividade da barra de menu
+
+mapa.html
+-fazer tudo kkkk
+
+visita.html
+-ajustar tamanho do botão "próximo"
+
+visita2.html
+-ajustar checkboxes (background e alinhamento)
+
+visita3.html
+-ajustar checkboxes (background e margin-left)
+
+visita4.html
+-ajustar checkboxes (background e margin-left)
+
+notification.html
+-fazer o modal
+
+new_notification.html
+-ok
+
+painel.html
+-
+
+painel2.html
+-
