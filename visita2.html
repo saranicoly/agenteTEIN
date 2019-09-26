@@ -1,3 +1,5 @@
+<!-- falta configurar os checkboxes (alinhamento e background) -->
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -34,6 +36,17 @@
 
   <body class="visita">
 
+
+<!-- checkboxes style
+
+OBS: o fundo cinza não está sendo aplicado.
+corrigir!!! 
+<style>
+    .custom-control-label:before{
+        background-color:#f2f2f2;
+    }
+</style>  
+-->
     <!-- navbar start -->
 
     <nav>
@@ -64,7 +77,7 @@
     <br><br>
 
     <!-- input field -->
-    <form action="visita3.html">
+    <form action="#">
       <fieldset>
         <div class="cadastro1">
           <input type="text" id="nsus2" placeholder="N° SUS" style="font-size: 23px">
@@ -84,29 +97,44 @@
         <div class="cadastro1">
           <input type="text" id="crianca" placeholder="Criança fica com..." style="font-size: 23px">
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="inlineCheckbox1">
+          <label class="form-check-label" for="inlineCheckbox1">
             Plano de saúde
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="inlineCheckbox2">
+          <label class="form-check-label" for="inlineCheckbox2">
             Mudança
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-          <label class="form-check-label" for="defaultCheck3">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="inlineCheckbox3">
+          <label class="form-check-label" for="inlineCheckbox3">
             Óbito
           </label>
         </div>
-        <br>
-        
-        <button class="prox_btn2">Anterior</button>
-        <input type="submit" class="prox_btn21" value="Próximo">
+        <!-- esse codigo deixa o checkbox cinza mas nao dá pra alinhá-los horizontalmente !!!
+          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+            <input type="checkbox" class="custom-control-input" id="customControlInline1">
+            <label class="custom-control-label" for="customControlInline1">Plano de saúde</label>
+          </div>
+          <div class="custom-control custom-checkbox my-1 mr-sm-2 form-check-inline">
+            <input type="checkbox" class="custom-control-input" id="customControlInline2">
+            <label class="custom-control-label" for="customControlInline2">Óbito</label>
+          </div>
+          <div class="custom-control custom-checkbox my-1 mr-sm-2 form-check-inline">
+            <input type="checkbox" class="custom-control-input" id="customControlInline3">
+            <label class="custom-control-label" for="customControlInline3">Mudança</label>
+            </div>
+
+            --> 
       </fieldset>
+      <br>
+
+      <button class="prox_btn2" onclick="window.location.href='visita.html'">Anterior</button>
+      <input type="submit" class="prox_btn21" value="Próximo" onclick="window.location.href='visita3.html'">
     </form>
 
 <!-- materialize scripts -->
