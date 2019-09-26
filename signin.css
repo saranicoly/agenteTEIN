@@ -269,3 +269,8 @@ input[type=text], select, textarea{
   border: 0px;
   flex: 1;
 }
+
+/* visita 3 */
+.form-check-inline {
+  width: 150px;
+}
