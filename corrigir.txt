@@ -7,7 +7,7 @@ forget.html
 ok
 
 home.html
--ajustar responsividade da barra de menu
+-ok
 
 mapa.html
 -fazer tudo kkkk

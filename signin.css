@@ -16,11 +16,22 @@ body {
 
 .barra {
   margin-top: 30%;
+  display: -webkit-flex;
   display: flex;
-  padding: 0%;
-  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
   background-color: #0098ac;
   min-width: 100%;
+  position: relative;
+  bottom: -110;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
 }
 
 li {
