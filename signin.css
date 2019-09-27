@@ -287,3 +287,25 @@ input[type=text], select, textarea{
 }
 
 /* painel */
+
+.graficos {
+  width: 90%;
+  background-color: white;
+  border-radius: 7px;
+  padding: 12px;
+}
+.text-painel {
+  text-align: left;
+  font-size: 15;
+  color: rgb(174, 174, 174);
+}
+
+.linha-painel {
+  text-align: center;
+  color: rgb(174, 174, 174);
+  max-width: 90%;
+}
+
+.img-painel {
+  max-width: 100%
+}
