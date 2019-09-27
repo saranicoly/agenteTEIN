@@ -285,3 +285,16 @@ input[type=text], select, textarea{
 .form-check-inline {
   width: 150px;
 }
+
+/* painel */
+.menu-painel{
+  color: black;
+  background-color: #fff;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+}
+
+li.current a {
+  background-color: yellow;
+}
