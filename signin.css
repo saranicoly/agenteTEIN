@@ -288,13 +288,11 @@ input[type=text], select, textarea{
 
 /* painel */
 .menu-painel{
-  color: black;
   background-color: #fff;
-  border-width: 0px;
-  border-style: none;
-  border-color: transparent;
 }
 
 li.current a {
-  background-color: yellow;
+  color:rgb(153, 153, 153);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(42, 215, 209);
 }
