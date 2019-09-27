@@ -287,12 +287,3 @@ input[type=text], select, textarea{
 }
 
 /* painel */
-.menu-painel{
-  background-color: #fff;
-}
-
-li.current a {
-  color:rgb(153, 153, 153);
-  text-decoration-line: underline;
-  text-decoration-color: rgb(42, 215, 209);
-}

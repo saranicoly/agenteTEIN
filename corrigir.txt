@@ -31,7 +31,8 @@ new_notification.html
 -ok
 
 painel.html
--
+-tirar bordas do menu-painel
+-colocar gráfico (precisa do backend pronto)
 
 painel2.html
 -
