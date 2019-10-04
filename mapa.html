@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- materialize fonts -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+
+    <title>Mapa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<!-- materialize script -->
+    <script>
+      $(function(){
+        $(".button-collapse").sideNav();
+      });
+    </script>
+
+<!-- map style -->
+    <style>
+      #map {
+        height: 600px; 
+        width: 100%; 
+       }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+  </head>
+
+  <body class="notif">
+
+    <!-- navbar start -->
+
+    <nav>
+      <div class="nav-wrapper #26c6da cyan lighten-1">            
+        <a href="#" class="brand-logo">Mapa</a>
+        <a href="#" data-activates="menu-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Sair</a></li>
+        </ul>
+
+        <ul class="side-nav #26c6da cyan lighten-1" id="menu-mobile">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Sair</a></li>
+        </ul>
+      </div>
+    </nav>
+                    
+    <!-- navbar end --> 
+    
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+function initMap() {
+  var maceio = {lat: -9.66625, lng: -35.7351};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 14, center: maceio});
+  var marker = new google.maps.Marker({position: maceio, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9SgF2m_OfGRK4Qp8MdVt4Ueg3FrcGHBI&callback=initMap">
+    </script>
+
+
+<!-- materialize scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    
+  </body>
+
+</html>

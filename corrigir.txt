@@ -1,0 +1,39 @@
+Detalhes do front-end a adicionar/corrigir:
+
+index.html
+ok
+
+forget.html
+ok
+
+home.html
+-ok
+
+mapa.html
+-fazer tudo kkkk
+
+visita.html
+-ajustar tamanho do botão "próximo"
+
+visita2.html
+-ajustar checkboxes (background e alinhamento)
+
+visita3.html
+-ajustar checkboxes (background e margin-left)
+
+visita4.html
+-ajustar checkboxes (background e margin-left)
+
+notification.html
+-fazer o modal
+
+new_notification.html
+-ok
+
+painel.html
+-colocar gráfico (precisa do backend pronto)
+-fazer carousel
+
+painel2.html
+-colocar gráfico (precisa do backend pronto)
+-fazer carousel

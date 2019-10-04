@@ -2,9 +2,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
     <title>Agente de endemias</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
@@ -25,7 +22,6 @@
         -ms-user-select: none;
         user-select: none;
       }
-
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -41,18 +37,26 @@
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
   <body>
+    <img src="images/agente2.png" alt="Nature" class="responsive">
     <form id="login" class="form-signin">
-      <img class="mb-4" src="UEPA.png" alt="" width="300" height="274">
-      <label for="inputEmail" class="sr-only">Email</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-      <label for="inputPassword" class="sr-only">Senha</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+      <div class="div_login">
+        <img src="images/user.png" width="17%">
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+      </div>
+      <div class="div_login" style="margin-top: 5%;">
+        <img src="images/senha.png" width="17%">
+        <label for="inputPassword" class="sr-only">Senha</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required auto>
+      </div>
       <div class="checkbox mb-3">
       </div>
+<<<<<<< HEAD
       <button class="btn btn-lg btn-primary btn-block" style="background-color: #38d8d0" type="submit" onclick="location.href='home.html';">Entrar</button>
+=======
+      <button class="btn btn-lg btn-primary btn-block" type="submit" style="background-color: #2ad7d1;"onclick="location.href='home.html';">Entrar</button>
+>>>>>>> 2f160d632129434969e0e1646b86ede66b503a87
       <!-- o botão está redirecionando para a home page (home.html), independente de validação -->
-      
-      <br>
       <a href="forget.html"><center>Esqueci a senha</center></a>
     </form>
 </body>

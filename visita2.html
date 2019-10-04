@@ -1,0 +1,143 @@
+<!-- falta configurar os checkboxes (alinhamento e background) -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- materialize fonts -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+
+    <title>Cadastro individual</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<!-- materialize script -->
+    <script>
+      $(function(){
+        $(".button-collapse").sideNav();
+      });
+    </script>
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+  </head>
+
+  <body class="visita">
+
+
+<!-- checkboxes style
+
+OBS: o fundo cinza não está sendo aplicado.
+corrigir!!! 
+<style>
+    .custom-control-label:before{
+        background-color:#f2f2f2;
+    }
+</style>  
+-->
+    <!-- navbar start -->
+
+    <nav>
+      <div class="nav-wrapper #26c6da cyan lighten-1">            
+        <a href="#" class="brand-logo">Cadastro Individual</a>
+        <a href="#" data-activates="menu-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Sair</a></li>
+        </ul>
+
+        <ul class="side-nav #26c6da cyan lighten-1" id="menu-mobile">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Sair</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br>  
+    <!-- navbar end --> 
+    
+    <!-- progress bar -->
+    <img src="images/progresso2.png">
+    <div class="text_visita" style="text-align: left;">Etapa 2 de 4</div>
+
+    <br><br>
+
+    <!-- input field -->
+    <form action="#">
+      <fieldset>
+        <div class="cadastro1">
+          <input type="text" id="nsus2" placeholder="N° SUS" style="font-size: 23px">
+        </div>
+        <div class="cadastro1">
+          <input type="text" id="parentesco" placeholder="Parentesco" style="font-size: 23px">
+        </div>
+        <div class="cadastro1">
+          <input type="text" id="escolaridade" placeholder="Escolaridade" style="font-size: 23px">
+        </div>
+        <div class="cadastro1">
+          <input type="text" id="genero" placeholder="Gênero" style="font-size: 23px">
+        </div>
+        <div class="cadastro1">
+          <input type="text" id="deficiencia" placeholder="Deficiência" style="font-size: 23px">
+        </div>
+        <div class="cadastro1">
+          <input type="text" id="crianca" placeholder="Criança fica com..." style="font-size: 23px">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="inlineCheckbox1">
+          <label class="form-check-label" for="inlineCheckbox1">
+            Plano de saúde
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="inlineCheckbox2">
+          <label class="form-check-label" for="inlineCheckbox2">
+            Mudança
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="inlineCheckbox3">
+          <label class="form-check-label" for="inlineCheckbox3">
+            Óbito
+          </label>
+        </div>
+        <!-- esse codigo deixa o checkbox cinza mas nao dá pra alinhá-los horizontalmente !!!
+          <div class="custom-control custom-checkbox my-1 mr-sm-2">
+            <input type="checkbox" class="custom-control-input" id="customControlInline1">
+            <label class="custom-control-label" for="customControlInline1">Plano de saúde</label>
+          </div>
+          <div class="custom-control custom-checkbox my-1 mr-sm-2 form-check-inline">
+            <input type="checkbox" class="custom-control-input" id="customControlInline2">
+            <label class="custom-control-label" for="customControlInline2">Óbito</label>
+          </div>
+          <div class="custom-control custom-checkbox my-1 mr-sm-2 form-check-inline">
+            <input type="checkbox" class="custom-control-input" id="customControlInline3">
+            <label class="custom-control-label" for="customControlInline3">Mudança</label>
+            </div>
+
+            --> 
+      </fieldset>
+      <br>
+
+      <button class="prox_btn2" onclick="window.location.href='visita.html'">Anterior</button>
+      <input type="submit" class="prox_btn21" value="Próximo" onclick="window.location.href='visita3.html'">
+    </form>
+
+<!-- materialize scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    
+  </body>
+
+</html>
