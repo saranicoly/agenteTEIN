@@ -5,6 +5,8 @@
 		<title>Home Page</title>
 	
 		<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
 	
 		<!-- Bootstrap core CSS -->
 		<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -37,30 +39,104 @@
 			color: white;
 			}
 		</style>
+		<!-- materialize script -->
+		<script>
+			$(function(){
+			  $(".button-collapse").sideNav();
+			});
+		  </script>
+	  
+	  <!-- map style -->
+		  <style>
+			#map {
+			  height: 600px; 
+			  width: 100%; 
+			 }
+		  </style>
 		<!-- Custom styles for this template -->
 		<link href="../signin.css" rel="stylesheet">
 	</head>
-	<body>
-		<img src="../images/agente2.png" alt="Nature" class="responsive">
-		<div class="barra">
-			<ul style="display: flex; flex-direction: row; margin-top: 10px; align-content: center;">
-				<li>
-					<a class="nav-link" href="../mapa.html"> <img src="../images/mapa.png" width="125%"> <span class="sr-only">(current)</span></a>
-				</li>
-	
-				<li>
-					<a class="nav-link" href="../visita.html"> <img src="../images/visita.png" width="125%"> <span class="sr-only">(current)</span></a>
-				</li>
-	
-				<li>
-					<a class="nav-link" href="../notification.html"> <img src="../images/notificações.png" width="125%"> <span class="sr-only">(current)</span></a>
-				</li>
-	
-				<li>
-						<a class="nav-link" href="../painel.html"> <img src="../images/painel.png" width="125%"> <span class="sr-only">(current)</span></a>
-				</li>
-		
-				</ul>
+	<body class="notif">
+		<div class="site" style="width: 100%; height: 100%">
+			<!-- navbar start -->
+			<div class="site-item row mapa" style="width: 100%; height: 100%">
+					<nav>
+							<div class="nav-wrapper #26c6da cyan lighten-1">            
+							  <a href="#" class="brand-logo">Mapa</a>
+							  <a href="#" data-activates="menu-mobile" class="button-collapse">
+								<i class="material-icons">menu</i>
+							  </a>
+					  
+							  <ul class="right hide-on-med-and-down">
+								<li><a href="home.html">Home</a></li>
+								<li><a href="index.html">Sair</a></li>
+							  </ul>
+					  
+							  <ul class="side-nav #26c6da cyan lighten-1" id="menu-mobile">
+								<li><a href="home.html">Home</a></li>
+								<li><a href="index.html">Sair</a></li>
+							  </ul>
+							</div>
+						  </nav>
+										  
+						  <!-- navbar end --> 
+						  
+						  <!--The div element for the map -->
+						  <div id="map"></div>
+						  <script>
+					  function initMap() {
+						var maceio = {lat: -9.66625, lng: -35.7351};
+						var map = new google.maps.Map(
+							document.getElementById('map'), {zoom: 14, center: maceio});
+						var marker = new google.maps.Marker({position: maceio, map: map});
+					  }
+						  </script>
+						  <script async defer
+						  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9SgF2m_OfGRK4Qp8MdVt4Ueg3FrcGHBI&callback=initMap">
+						  </script>
+					  
+					  
+					  <!-- materialize scripts -->
+						  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+						  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+			</div>
 		</div>
+	  </body>
+	<body>
+		<!--<div class="site">
+				 navbar start 
+				<div class="site-item row home">-->
+					<img src="../images/agente2.png" alt="Nature" class="responsive">
+					<div class="filter-button-group containerLateral">
+						<div class="barra">
+							<ul style="display: flex; flex-direction: row; margin-top: 10px; align-content: center;">
+								<li>
+									<a class="nav-item nav-link" href="#" data-filter=".home"></a>
+								</li>
+
+								<li>
+									<a class="nav-item nav-link" href="../mapa.html" data-filter=".mapa"> <img src="../images/mapa.png" width="125%"> <span class="sr-only">(current)</span></a>
+								</li>
+					
+								<li>
+									<a class="nav-item nav-link" href="../visita.html" data-filter=".visita"> <img src="../images/visita.png" width="125%"> <span class="sr-only">(current)</span></a>
+								</li>
+					
+								<li>
+									<a class="nav-item nav-link" href="../notification.html" data-filter=".notifica"> <img src="../images/notificações.png" width="125%"> <span class="sr-only">(current)</span></a>
+								</li>
+					
+								<li>
+										<a class="nav-item nav-link" href="../painel.html" data-filter=".painel"> <img src="../images/painel.png" width="125%"> <span class="sr-only">(current)</span></a>
+								</li>
+						
+								</ul>
+							</div>
+					</div>
+				</div>
+			</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="../ajax.js"></script>
+        <script src="../selector.js"></script>
 	</body>
 </html>
