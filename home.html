@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home Page</title>
+    <title>Home</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
 
@@ -22,6 +22,7 @@
         -ms-user-select: none;
         user-select: none;
       }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -33,34 +34,25 @@
       form {
         background-color: rgb(3, 126, 142);
       }
+
       .forget-title{
         color: white;
       }
     </style>
+
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
-    </head>
+    <link href="style.css" rel="stylesheet">
+
+
   <body>
     <img src="images/agente2.png" alt="Nature" class="responsive">
-    <div class="barra">
-        <ul style="display: flex; flex-direction: row; margin-top: 10px; align-content: center;">
-            <li>
-                <a class="nav-link" href="mapa.html"> <img src="images/mapa.png" width="125%"> <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li>
-                <a class="nav-link" href="visita.html"> <img src="images/visita.png" width="125%"> <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li>
-                <a class="nav-link" href="notification.html"> <img src="images/notificações.png" width="125%"> <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li>
-                    <a class="nav-link" href="painel.html"> <img src="images/painel.png" width="125%"> <span class="sr-only">(current)</span></a>
-            </li>
-    
-            </ul>
-    </div>
+    <form id="recover" class="form-signin" action="index.html">
+      <h6 class="forget-title"><center>Se há algum problema na sua rua ou no seu bairro nos informe.</center></h6>
+      <div class="checkbox mb-3">
+      </div>
+      
+    </form>
+    <button class="btn_alert" style="background-color: #2ad7d1; "onclick="location.href='alerta.html';" type="submit"></button>
+      <!-- colocar aviso de que foi enviado um email de recuperação!!!! -->
 </body>
 </html>
